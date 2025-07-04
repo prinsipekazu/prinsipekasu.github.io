@@ -1,0 +1,318 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', Arial, sans-serif; 
+  background-color: #ffffff; 
+}
+
+.login-container {
+  width: 350px;
+  margin: 60px auto;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  padding: 32px 28px 24px 28px;
+  box-sizing: border-box;
+}
+
+h2 {
+  font-size: 24px;
+  color: #6b2929; 
+  text-align: center; 
+  margin-top: 200px;
+  margin-bottom: 28px; 
+  font-weight: 500; 
+}
+
+.input-group {
+  margin-bottom: 18px;
+  position: relative;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px 40px 12px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 15px;
+  background: #fafafa;
+  outline: none;
+  transition: border 0.2s;
+}
+
+.input-group input:focus {
+  border-color: #198754;
+}
+
+.eye-icon {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 12px 0;
+  background: #198754;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  margin-bottom: 10px;
+  transition: background 0.2s;
+}
+
+.login-btn:hover {
+  background: #198754;
+}
+
+.forgot-password {
+  display: block;
+  text-align: left;
+  font-size: 13px;
+  color: #08f;
+  text-decoration: none;
+  margin-bottom: 18px;
+  margin-top: -8px;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  margin: 18px 0;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #eee;
+}
+
+.divider span {
+  margin: 0 12px;
+  color: #aaa;
+  font-size: 13px;
+}
+
+.signup-link {
+  text-align: center;
+  font-size: 14px;
+  color: #888;
+  margin-top: 12px;
+}
+
+.signup-link a {
+  color: #198754;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 2px;
+}
+
+@media (max-width: 400px) {
+  .login-container {
+    width: 96vw;
+    padding: 18px 6vw;
+  }
+}
+
+.hero-section {
+  position: relative;
+  width: 100%;
+  height: 60vh;
+  background: url('herobg.jpg') no-repeat center center/cover;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  background: rgb(255, 255, 255);
+  height: 70px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 38px;
+  font-family: Arial, sans-serif;
+  color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.logo span {
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+  margin-left: 10px;
+  font-weight: normal;
+  background: #fff;
+  color: #333;
+  padding: 2px 7px;
+  border-radius: 4px;
+}
+
+.menu a {
+  color: #4c6b30;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.hero-text {
+  position: absolute;
+  top: 40%;
+  left: 10%;
+  text-align: left;
+  color: #ffffff;
+  width: 60%;
+  max-width: 800px;
+  z-index: 2;
+}
+
+.hero-text h1 {
+  font-size: 64px;
+  line-height: 1.1;
+  font-weight: 800;
+  letter-spacing: 2px;
+  margin: 0;
+  text-shadow: 2px 2px 16px rgba(0, 0, 0, 0.7);
+}
+
+@media (max-width: 900px) {
+  .hero-text h1 {
+    font-size: 36px;
+  }
+  .navbar,
+  .top-bar {
+    padding: 0 10px;
+  }
+  .hero-text {
+    width: 90%;
+  }
+}
+
+.nav-link.dropdown-toggle {
+  color: #4c6b30;
+}
+
+.dropdown-menu .dropdown-item {
+  color: #4c6b30 !important;
+}
+
+.dropdown-menu {
+  background-color: rgb(255, 255, 255) !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+.dropdown-item:hover {
+  background-color: #4c6b30 !important;
+  color: #ffffff !important;
+}
+
+/* Footer container */
+footer {
+  background: #e6e6e6;
+  padding: 40px 0 20px 0;
+  color: #222;
+  font-family: Arial, sans-serif;
+}
+
+/* Main footer content wrapper */
+footer > div:first-child {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+/* Company Info section */
+footer > div:first-child > div:nth-child(1) {
+  flex: 2;
+  min-width: 250px;
+}
+
+/* Company logo */
+footer > div:first-child > div:nth-child(1) img {
+  height: 96px;
+  margin-bottom: 10px;
+}
+
+/* Email and contact info container */
+footer > div:first-child > div:nth-child(1) > p,
+footer > div:first-child > div:nth-child(1) > div {
+  font-size: 20px;
+  line-height: 1.6;
+  color: #222; /* Changed from #ffffff to #222 for readability */
+  text-align: left;
+}
+
+/* Right column: phone numbers and office address */
+footer > div:first-child > div:nth-child(2) {
+  flex: 1;
+  min-width: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Phone numbers block */
+footer > div:first-child > div:nth-child(2) > div:first-child {
+  /* No extra styles needed here */
+}
+
+/* Office address block */
+footer > div:first-child > div:nth-child(2) > div:last-child {
+  margin-top: 20px;
+}
+
+/* Trusted clients section */
+footer > div:nth-child(2) {
+  padding: 25px 0 5px 0;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+/* Trusted clients heading */
+footer > div:nth-child(2) h3 {
+  color: #48612a;
+  font-weight: 500;
+  font-size: 1.1rem;
+  margin-bottom: 18px;
+}
+
+/* Trusted clients logos container */
+footer > div:nth-child(2) > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+/* Trusted clients logos */
+footer > div:nth-child(2) > div > img {
+  height: 50px;
+}
+
+/* Copyright text */
+footer > div:last-child {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 14px;
+  color: #888;
+}
