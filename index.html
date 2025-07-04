@@ -9,15 +9,17 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
+  <script src="script.js"></script>
   <div class="hero-section">
     <div class="navbar">
       <div class="logo">
-        <img src="logo.jpg" alt="Logo" height="50" style="object-fit:contain;">
+        <img src="logo.jpg" alt="Logo" height="50;">
       </div>
       <nav class="menu">
         <a href="#">Home</a>
+        <span style="display:inline-block; width:1px; height:18px; background:#4c6b30; margin:0 10px;"></span>
         <a href="#">About Us</a>
-
+           <span style="display:inline-block; width:1px; height:18px; background:#4c6b30; margin:0 10px;"></span>
        <div class="nav-item dropdown" style="display:inline-block;">
           <a class="nav-link dropdown-toggle text-white" href="#" id="productsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Products
@@ -29,9 +31,8 @@
           </ul>
         </div>
       
-        <i class="fa fa-user"></i>
-        <a>PH</a>
-      
+        <i class="fa fa-user" id="loginIcon" style="cursor:pointer;"></i>
+        
       </nav>
     </div>
   
@@ -49,7 +50,7 @@
         <!-- Company Info -->
         <div style="flex: 2; min-width: 250px;">
           <img src="logo.jpg" alt="Chemline Scientific Corporation"style="height: 96px; margin-bottom: 10px;">
-          <p style="font-size: 20px; line-height: 1.6; justify-content: left; color: #222;">
+          <p style="font-size: 20px; line-height: 1.6; justify-content: left; color: #ffffff;">
           <div>
         <strong>Email Address</strong><br>
         General Inquiry: <a href="mailto:info@chemline.com.ph">info@chemline.com.ph</a><br>
@@ -95,7 +96,6 @@
         &copy; 2025 Chemline Scientific Corp. All rights reserved.
       </div>
     </footer>
-  
-  
+
 </body>
 </html>
